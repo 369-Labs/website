@@ -3,55 +3,31 @@ const Footer = ({}) => {
     <footer className="pb-4">
     <div className="max-w-6xl xl:max-w-6xl mx-auto divide-y divide-gray-200 px-4 sm:px-6 md:px-8">
      
-      <div className="flex flex-col-reverse justify-between pt-5 pb-4 border-t lg:flex-row bg-top border-black">
-        <ul className="flex flex-col space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+      <div className="flex flex-row justify-between pt-3 pb-1 border-t lg:flex-row bg-top border-gray-600 dark:border-gray-300">
+        <ul className="flex flex-row space-y-0 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>
             <a
               href="/"
-              className="text-md text-black transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
+              className="text-xs p-1 text-gray-600 hover:text-gray-900 transition-colors duration-300 hover:text-deep-purple-accent-400 dark:text-gray-200"
             >
-              Terms of Service
+              Privacy
             </a>
           </li>
           <li>
             <a
               href="/"
-              className="text-md text-black transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
+              className="text-xs p-1 text-gray-600 hover:text-gray-900 transition-colors duration-300 hover:text-deep-purple-accent-400 dark:text-gray-200"
             >
-              Privacy Policy
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              className="text-md text-black transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
-            >
-              Ad Choices
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              className="text-md text-black transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
-            >
-              Cookie Policy
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              className="text-md text-black transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
-            >
-              Partners
+              Cookies
             </a>
           </li>
         </ul>
-        <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+        <ul className="flex flex-row space-y-0 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <a
             href="/"
-            className="text-md text-black transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight"
+            className="text-xs p-1 text-gray-600 hover:text-gray-900 transition-colors duration-300 hover:text-deep-purple-accent-400 tracking-tight dark:text-gray-200"
           >
-            © 2021 Company Inc.
+            © 2021 369 Technologies Inc.
           </a>
         </ul>
       </div>
