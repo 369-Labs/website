@@ -51,7 +51,7 @@ const Navbar = ({}) => {
   <div className="max-w-7xl mx-auto px-4 sm:px-6">
     <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
       <div className="flex justify-start lg:w-0 lg:flex-1 ">
-        <a href="#" className="font-bold text-2xl tracking-tighter dark:text-white">
+        <a href="#" className=" text-xl font-extrabold  dark:text-white tracking-tighter">
           36NINE
         </a>
       </div>
@@ -63,24 +63,24 @@ const Navbar = ({}) => {
       </div>
       <Popover.Group as="nav" className="hidden md:flex space-x-10">
         <a href="#" className="text-base font-sm text-black hover:text-gray-900 dark:text-gray-100 dark:hover:text-white">
-          Security
+          Projects
         </a>
         <a href="#" className="text-base font-sm text-black hover:text-gray-900 dark:text-gray-100 dark:hover:text-white">
-          Integrations
+          Crypto
         </a>
         <a href="/news" className="text-base font-sm text-black hover:text-gray-900 dark:text-gray-100 dark:hover:text-white">
-          News
+          About
         </a>
         </Popover.Group>
       <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
         <Link href="">
-          <a>
+          <a className="hover:text-blue-400">
             <FaTwitter  />
           </a>
         </Link>
         <Link href="">
           <a className="pl-4">
-            <FaGithub  />
+            <FaGithub className="hover:text-purple-400"  />
           </a>
         </Link>
       </div>
