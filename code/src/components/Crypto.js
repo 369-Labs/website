@@ -4,24 +4,22 @@ import styled from 'styled-components'
 
 const Element = styled.span`
 text-align: center;
-color: cyan
-`
+color: cyan;`
 
 
 class CryptoAssets extends React.Component {
   componentDidMount() {
     const options = {
       strings: [
-        'Buy',
         'Bet',
+        'Buy',
         'Sell',
-        'Store',
-        'Send',
-        'Track'
+        'Stake',
+        'Store'
       ]
       ,
       typeSpeed: 100,
-      backSpeed: 70,
+      backSpeed: 100,
       loop: true,
       cursorChar: '|',
     }

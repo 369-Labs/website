@@ -10,31 +10,19 @@ import { FaGithub, FaTwitter, FaReddit} from 'react-icons/fa'
 
 const solutions = [
   {
-    name: 'News',
+    name: 'Projects',
     description: 'Get a better understanding of where your traffic is coming from.',
     href: '#',
     icon: IoNewspaperOutline
   },
   {
-    name: 'Technologies',
+    name: 'Crypto',
     description: "Your customers' data will be safe and secure.",
     href: '#',
     icon: BiPyramid
   },
   {
-    name: 'Open Source',
-    description: "Your customers' data will be safe and secure.",
-    href: '#',
-    icon: IoCodeOutline
-  },
-  {
-    name: 'Documentation',
-    description: "Your customers' data will be safe and secure.",
-    href: '#',
-    icon: IoDocumentsOutline
-  },
-  {
-    name: 'Company',
+    name: 'About',
     description: "Your customers' data will be safe and secure.",
     href: '#',
     icon: RiBuilding2Line
@@ -47,13 +35,15 @@ function classNames(...classes) {
 
 const Navbar = ({}) => {
   return (
-  <Popover className="relative bg-white dark:bg-black dark:text-gray-100 ">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6">
+  <Popover className="relative bg-white text-black dark:bg-black dark:text-gray-100 ">
+  <div className="max-w-7xl mx-auto px-6">
     <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
       <div className="flex justify-start lg:w-0 lg:flex-1 ">
-        <a href="#" className=" text-xl font-extrabold  dark:text-white tracking-tighter">
+      <Link href="/">
+        <a className=" text-xl font-extrabold  dark:text-white tracking-tighter">
           36NINE
         </a>
+        </Link>
       </div>
       <div className="-mr-2 -my-2 md:hidden">
         <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-500 hover:bg-gray-100 dark:bg-black dark:text-gray-100">
@@ -62,25 +52,31 @@ const Navbar = ({}) => {
         </Popover.Button>
       </div>
       <Popover.Group as="nav" className="hidden md:flex space-x-10">
-        <a href="#" className="text-base font-sm text-black hover:text-gray-900 dark:text-gray-100 dark:hover:text-white">
-          Projects
+        <Link href="/lab">
+        <a className="font-light text-sm text-black hover:text-cyan dark:text-gray-300">
+          Lab
         </a>
-        <a href="#" className="text-base font-sm text-black hover:text-gray-900 dark:text-gray-100 dark:hover:text-white">
+        </Link>
+        <Link href="/cryptoWiki">
+        <a className="text-sm font-light text-black hover:text-cyan dark:text-gray-300">
           Crypto
         </a>
-        <a href="/news" className="text-base font-sm text-black hover:text-gray-900 dark:text-gray-100 dark:hover:text-white">
+        </Link>
+        <Link href="/about">
+        <a className="font-light text-sm text-black hover:text-cyan dark:text-gray-300">
           About
         </a>
+        </Link>
         </Popover.Group>
       <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-        <Link href="">
-          <a className="hover:text-blue-400">
+        <Link href="https://twitter.com/kv1bv">
+          <a className="hover:text-blue-400 text-lg">
             <FaTwitter  />
           </a>
         </Link>
-        <Link href="">
-          <a className="pl-4">
-            <FaGithub className="hover:text-purple-400"  />
+        <Link href="https://github.com/369-Labs">
+          <a className="pl-6 text-lg hover:text-purple-400">
+            <FaGithub/>
           </a>
         </Link>
       </div>
@@ -98,47 +94,38 @@ const Navbar = ({}) => {
     leaveTo="opacity-0 scale-95"
   >
 
-    <Popover.Panel focus className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-      <div className="filter drop-shadow-md rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-        <div className="pt-5 pb-6 px-5">
+<Popover.Panel focus className=" top-0 inset-x-0 p-0 absolute transform transition origin-top-right md:hidden">
+      <div className=" rounded-lg bg-white dark:bg-black">
+        <div className="pt-5 pb-6 px-6">
           <div className="flex items-center justify-between">
-            <div className="text-center">
-              <a className="h-8 w-auto font-bold text-3xl tracking-tight">
-                36NINE
+            <div>
+              <a className="h-8 w-auto font-semibold text-1xl tracking-tighter">
+                Welcome
               </a>
             </div>
-            <div className="-mr-2">
-              <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-500 hover:bg-gray-100">
-                <span className="sr-only">Close menu</span>
-                <IoCloseSharp className="h-6 w-6"/>
+            <div>
+              <Popover.Button className=" rounded-md p-2 inline-flex items-center justify-center text-black dark:text-white">
+            
+                <IoCloseSharp className="h-7 w-7"/>
               </Popover.Button>
             </div>
           </div>
           <div className="mt-6">
-            <nav className="grid gap-y-8">
+            <nav className="grid gap-y-8 ">
               {solutions.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                  className="-m-4 p-3 flex items-center rounded-md"
                 >
-                  <item.icon className="flex-shrink-0 h-6 w-6 text-black" aria-hidden="true" />
-                  <span className="ml-3 text-base font-medium text-black">{item.name}</span>
+                  <item.icon className="flex-shrink-0 h-5 w-5 dark:text-white" aria-hidden="true" />
+                  <span className="ml-3 text-base font-light dark:text-white">{item.name}</span>
                 </a>
               ))}
             </nav>
           </div>
         </div>
-        <div className="py-6 px-5 space-y-6">
-          <div>
-            <a
-              href="#"
-              className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-black"
-            >
-              Subscribe
-            </a>
-          </div>
-        </div>
+
       </div>
     </Popover.Panel>
   </Transition>
