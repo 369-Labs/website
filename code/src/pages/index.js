@@ -44,7 +44,7 @@ export default function Home() {
           </p>
           <div className="pt-80 md:pt-9 lg:pt-12 xl:pt-20 2xl:pt-9">
             <a className="inline-flex text-xs  items-center px-6 py-3 font-medium  text-black border-black bg-white dark:bg-black dark:text-gray-100 dark:border-gray-300 transition duration-500 ease-in-out transform bg-transparent border rounded-lg">
-              Coming Soon
+              Coming 2024
             </a>
             </div>
         </div>

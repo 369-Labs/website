@@ -29,7 +29,7 @@ const Footer = ({}) => {
             href="/"
             className="text-xs p-1 text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 tracking-tight dark:text-gray-200"
           >
-            © 2022 369 Technologies Inc.
+            © 2023 369 Technologies Inc.
           </a>
         </ul>
       </div>
