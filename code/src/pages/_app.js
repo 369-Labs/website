@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import Layout from '../components/Layout'
-import Head from 'next/head'
+import Head from 'next/script'
 import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
